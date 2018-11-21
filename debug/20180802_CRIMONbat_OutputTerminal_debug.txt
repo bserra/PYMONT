@@ -1,0 +1,161 @@
+Microsoft Windows [Version 10.0.14393]
+
+irlab@GA022963 C:\Users\irlab
+> cd Desktop
+
+irlab@GA022963 C:\Users\irlab\Desktop
+> ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+irlab@GA022963 C:\Users\irlab\Desktop
+> dir
+ Volume in drive C is OS
+ Volume Serial Number is C6A1-A1F3
+
+ Directory of C:\Users\irlab\Desktop
+
+07/16/2018  12:03 PM    <DIR>          .
+07/16/2018  12:03 PM    <DIR>          ..
+07/31/2018  11:49 AM    <DIR>          COOLDOWN_LOGS
+05/28/2018  02:22 PM             1,242 CRIMON.bat - Shortcut.lnk
+02/12/2018  01:01 PM             9,826 CurveHandler.Windows.application
+10/26/2017  02:42 PM             2,688 Dynamics NAV 2016.lnk
+03/27/2018  05:43 PM               424 Instrument Communication Utility.appref-ms
+11/13/2017  04:17 PM         1,852,992 JavaSetup8u151.exe
+02/15/2018  05:30 PM         1,861,696 JavaSetup8u161.exe
+02/19/2018  02:55 PM               402 Lake Shore Curve Handler 9.appref-ms
+05/25/2018  02:14 PM             1,306 MonitoringServer.bat - Shortcut.lnk
+10/26/2017  02:01 PM    <DIR>          motor_drive_software
+03/29/2018  11:45 AM               975 RAID - Cooldowns.lnk
+07/05/2018  02:30 PM               784 test.py
+              10 File(s)      3,732,335 bytes
+               4 Dir(s)  914,598,035,456 bytes free
+
+irlab@GA022963 C:\Users\irlab\Desktop
+> "CRIMON.bat - Shortcut.lnk"
+
+irlab@GA022963 C:\Users\irlab\Desktop\COOLDOWN_LOGS
+> set root=C:\ProgramData\Anaconda3
+
+irlab@GA022963 C:\Users\irlab\Desktop\COOLDOWN_LOGS
+> call C:\ProgramData\Anaconda3\Scripts\activate.bat
+
+(base) irlab@GA022963 C:\Users\irlab\Desktop\COOLDOWN_LOGS
+> cd /D Z:\projects\CRISLER\Software\Monitoring
+
+(base) irlab@GA022963 Z:\projects\CRISLER\Software\Monitoring
+> python CRISLER_Monitoring_v04.5_test.py  1>C:\Users\irlab\Desktop\COOLDOWN_LOGS\MonitoringLog_20183107.txt
+Traceback (most recent call last):
+  File "CRISLER_Monitoring_v04.5_test.py", line 877, in <module>
+    aw = ApplicationWindow()
+  File "CRISLER_Monitoring_v04.5_test.py", line 700, in __init__
+    self.dc = MonitoringWidget(self.DATETIME_FMT)
+  File "CRISLER_Monitoring_v04.5_test.py", line 432, in __init__
+    self.connect()
+  File "CRISLER_Monitoring_v04.5_test.py", line 566, in connect
+    self.comm = CommunicationServer(self.df)
+  File "CRISLER_Monitoring_v04.5_test.py", line 364, in __init__
+    type  = instrument_type)
+  File "Z:\projects\CRISLER\Software\Monitoring\drivers\rigol_tcp.py", line 64, in __init__
+    self.socket.connect((TCP_IP, TCP_PORT))
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+(base) irlab@GA022963 Z:\projects\CRISLER\Software\Monitoring
+> pause
+Press any key to continue . . .
+
+irlab@GA022963 C:\Users\irlab\Desktop
+> "CRIMON.bat - Shortcut.lnk"
+
+irlab@GA022963 C:\Users\irlab\Desktop\COOLDOWN_LOGS
+> set root=C:\ProgramData\Anaconda3
+
+irlab@GA022963 C:\Users\irlab\Desktop\COOLDOWN_LOGS
+> call C:\ProgramData\Anaconda3\Scripts\activate.bat
+
+(base) irlab@GA022963 C:\Users\irlab\Desktop\COOLDOWN_LOGS
+> cd /D Z:\projects\CRISLER\Software\Monitoring
+
+(base) irlab@GA022963 Z:\projects\CRISLER\Software\Monitoring
+> python CRISLER_Monitoring_v04.5_test.py  1>C:\Users\irlab\Desktop\COOLDOWN_LOGS\MonitoringLog_20183107.txt
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 247, in handler
+    data = client.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 247, in handler
+    data = client.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 247, in handler
+    data = client.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 247, in handler
+    data = client.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 287, in handler
+    response = self.CS.instruments_tag[i[1]]._send_command(i[2])
+  File "Z:\projects\CRISLER\Software\Monitoring\drivers\rigol_tcp.py", line 235, in _send_command
+    data = self.socket.recv(self.BUFFER_SIZE).decode()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 287, in handler
+    response = self.CS.instruments_tag[i[1]]._send_command(i[2])
+  File "Z:\projects\CRISLER\Software\Monitoring\drivers\rigol_tcp.py", line 233, in _send_command
+    self.socket.send(self._lf(command).encode())
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "C:\ProgramData\Anaconda3\lib\threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "CRISLER_Monitoring_v04.5_test.py", line 313, in inst_server
+    client, client_adress = self.socket.accept()
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+
+(base) irlab@GA022963 Z:\projects\CRISLER\Software\Monitoring
+> pause
+Press any key to continue . . .

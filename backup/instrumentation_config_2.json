@@ -1,0 +1,50 @@
+{
+	"T": {
+		"type":"Temperature",
+		"ident":["Lakeshore336",
+        		  "Lakeshore336"],
+		"Comm": [
+			["TCP", "134.171.5.180"],
+			["TCP", "134.171.5.181"]
+		],
+		"LSCI,MODEL336,336AANG/#######,2.2": ["A", "B", "C"],
+		"LSCI,MODEL336,LSA163F/LSA15SI,2.7": ["B", "C", "D", "D2", "D3", "D4", "D5"],
+		"LSCI,MODEL336,LSA22LU/LSA217G,2.8": ["A", "B", "C"]
+	},
+	"MM": {
+		"type":"Multimeters",
+		"ident":["HMC8012",
+        		  "HMC8012"],
+		"Comm": [
+			["TCP", "134.171.5.182"],
+			["TCP", "134.171.5.183"]
+		],
+		"Opts": [
+			["DC_I"],
+			["DC_V"]
+		]
+	},
+	"PSU": {
+		"type":"Power supplies",
+		"ident":["DP831A",
+        		  "DG1062Z"],
+		"Comm": [
+			["TCP", "134.171.5.188"],
+			["TCP", "192.168.6.10"]
+		]
+	},
+	"OS": {
+		"type":"Oscilloscopes",
+		"ident":["DSO5034"],
+		"Comm": [
+			["TCP", "134.171.5.184"]
+		]
+	},
+	"P": {
+		"type":"Vacuum gauges",
+		"ident":["TPG262"],
+		"Comm": [
+			["Serial", "COM4"]
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+   "cooldown":[
+         "INST|T001|SETP 1,140",
+         "INST|T001|SETP 2,40"
+         ],
+   "warmup":[
+         "INST|T001|SETP 1,300",
+         "INST|T001|SETP 2,300"
+         ]
+}

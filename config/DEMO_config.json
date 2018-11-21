@@ -1,0 +1,31 @@
+{
+   "GLOBAL_CONFIG":{
+      "host":"134.171.5.190:4500",
+      "savepath":"/home/pi/Softwares/Monitoring_v1.x/",
+      "sampling":"5",
+      "timeout":"1"
+   },
+   "Instruments":{
+      "MM":{
+         "type":"Multimeter",
+         "ident":[
+            "DM3068",
+            "DM3068",
+            "DM3068"
+         ],
+         "comm":[
+            "GPIB0::7::INSTR",
+            "ASRL/dev/ttyUSB1::INSTR",
+            "USB0::6833::3220::DM3O183700740::0::INSTR"
+         ],
+         "config":[
+            "",
+            "",
+            ""
+         ],
+         "models":{
+
+         }
+      }
+   }
+}

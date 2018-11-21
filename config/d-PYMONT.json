@@ -1,0 +1,17 @@
+{
+    "fields":
+        ["P001_Gauge 1",
+        "P001_Gauge 2",
+        "T001_Input A",
+        "T001_Input B",
+        "T001_Input C",
+        "T002_Input B",
+        "T002_Input C",
+        "T002_Input D",
+        "T002_Input D2",
+        "T002_Input D3",
+        "T002_Input D4",
+        "T002_Input D5",
+        "MM001_DC_I",
+        "MM002_DC_V"]
+}

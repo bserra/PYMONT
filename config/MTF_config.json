@@ -1,0 +1,51 @@
+{
+   "GLOBAL_CONFIG":{
+      "host":"134.171.12.57:4500",
+      "savepath":"/home/pi/Softwares/Monitoring_v1.x/",
+      "sampling":"5",
+      "timeout":"1"
+   },
+   "Instruments":{
+      "T":{
+         "type":"Temperature",
+         "ident":[
+            "Lakeshore340",
+            "Lakeshore340"
+         ],
+         "comm":[
+            "GPIB::12::INSTR",
+            "GPIB::14::INSTR"
+         ],
+         "models":{
+            "LSCI,MODEL340,342695,061407":[
+               "A",
+               "B"
+            ],
+            "LSCI,MODEL340,341722,042304":[
+               "A",
+               "B"
+            ]
+         },
+         "config":[
+            "",
+            "",
+            ""
+         ]
+      },
+      "P":{
+         "type":"Vacuum gauges",
+         "ident":[
+            "TPG262"
+         ],
+         "comm":[
+            "ASRL/dev/ttyUSB0::INSTR"
+         ],
+         "models":{
+
+         },
+         "config":[
+            ""
+         ]
+      }
+   }
+}

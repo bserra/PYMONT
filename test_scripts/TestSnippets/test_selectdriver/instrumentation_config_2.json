@@ -1,0 +1,41 @@
+{
+	"T": {
+		"ident":"Lakeshore336",
+		"Comm": [
+			["TCP", "134.171.5.180"],
+			["TCP", "134.171.5.181"]
+		],
+		"LSCI,MODEL336,336AANG/#######,2.2": ["A", "B", "C"],
+		"LSCI,MODEL336,LSA163F/LSA15SI,2.7": ["B", "C", "D", "D2", "D3", "D4", "D5"],
+		"LSCI,MODEL336,LSA22LU/LSA217G,2.8": ["A", "B", "C"]
+	},
+	"MM": {
+		"ident":"HMC8012",
+		"Comm": [
+			["TCP", "134.171.5.182"],
+			["TCP", "134.171.5.183"]
+		],
+		"Opts": [
+			["mode", "DC_I"],
+			["mode", "DC_V"]
+		]
+	},
+	"PSU": {
+		"ident":"DP831A",
+		"Comm": [
+			["TCP", "134.171.5.188"]
+		]
+	},
+	"OS": {
+		"ident":"DSO5034",
+		"Comm": [
+			["TCP", "134.171.5.184"]
+		]
+	},
+	"P": {
+		"ident":"TPG262",
+		"Comm": [
+			["Serial", "COM4"]
+		]
+	}
+}

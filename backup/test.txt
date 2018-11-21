@@ -1,0 +1,14 @@
+Connection to Lakeshore
+Connection to Multimeters
+Connection to Pfeiffer Controller
+Instruction server 134.171.36.18:5006 established
+134.171.36.18:5006 waiting for client connection
+C:\Users\irlab\Desktop\COOLDOWN_LOGS\
+Data received: b'T001:KRDG? A'
+> Data send: b'+36.8674'
+Data received: b'T001:KRDG? A'
+> Data send: b'+36.8671'
+Data received: b'T001:KRDG? 0'
+> Data send: b'+36.8662,+22.6731,+34.0215,+00.0000,+00.0000,+00.0000,+00.0000,+00.0000'
+Data received: b'T002:KRDG? 0'
+> Data send: b'+00.0000,+43.5161,+43.4334,+135.002,+47.9134,+48.4537,+139.127,+91.7505'
